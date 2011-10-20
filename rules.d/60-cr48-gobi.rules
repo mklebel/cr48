@@ -1,0 +1,10 @@
+# udev rules for firmware loading of qualcomm gobi devices
+
+ACTION=="add", SUBSYSTEM=="tty", KERNEL=="ttyUSB*", GOTO="gobi_rules"
+
+GOTO="gobi_rules_end"
+
+LABEL="gobi_rules"
+ATTRS{idVendor}=="1410", ATTRS{idProduct}=="a014", RUN+="/opt/Qualcomm/QDLService2k/QDLService2kNovatel $env{DEVNAME}"
+
+LABEL="gobi_rules_end"

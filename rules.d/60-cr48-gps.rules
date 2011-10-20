@@ -1,0 +1,2 @@
+# udev rules for starting gps
+KERNEL=="ttyUSB3", RUN+="/opt/Qualcomm/bin/start_gps.sh"
