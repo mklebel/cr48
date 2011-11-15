@@ -1,7 +1,0 @@
-qcserial.c-patch - creates /dev/ttyUSB0
-Qualcomm - firmware required to finish loading gobi2000 devices, creates /dev/ttyUSB{1-3}
-60-cr48-gobi.rules - udev rule to automate firmware loading
-
-If anyone knows an easier way to compile modules by hand, I'd really love to know how, instead of manually creating a Makefile.
-
-TODO: get GPS working
