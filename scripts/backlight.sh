@@ -23,9 +23,9 @@ UP_VAL=`echo "${CURRENT} + ${INCREMENT}" | bc`
 # calculate a value to go down
 DOWN_VAL=`echo "${CURRENT} - ${INCREMENT}" | bc`
 
-# do not exceed 256, if increasing brightness
-if [ ${UP_VAL} -gt 256 ]; then
-  UP_VAL=256
+# do not exceed 9, if increasing brightness
+if [ ${UP_VAL} -gt 9 ]; then
+  UP_VAL=9
 fi
 
 # do not exceed 0, if decreasing brightness
